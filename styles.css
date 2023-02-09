@@ -1,32 +1,171 @@
-#parent
-{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: lightblue;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.container .left-side{
+    position: relative;
+    background-color: #003147;
+    padding: 40px;
+}
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.profileText .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height:100%;
-    width:100%;
-    border: 4px solid red;;
+    object-fit: cover;
 }
-img 
-{
-height:200px;
-width:150px;
-margin-left:1000px;
-margin-top:-200px;
-border:1px solid goldenrod;
-}
-h3
-{
-    background-color: gray;
-    color:orange;
-    font-size: 30px;
-}
-table
-{
-width:100%;
-text-align: center;
-}
-h1 
-{
+.profileText h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
     text-align: center;
-    color: blue;
+    line-height: 1.4em;
 }
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.contactInfo{
+    padding-top: 40px;
+}
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul{
+    position: relative;
 
-
+}
+.contactInfo ul li{
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+    list-style: none;
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.contactInfo ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+.mySkills .title{ 
+    padding-top: 30px;
+}
+.mySkills ul li{
+    color: #03a9f4;
+}
+ .mySkills ul li h5{
+    color:#fff;
+    font-weight: 400;
+    font-size: medium;
+    margin-bottom: 5px;
+}
+.contactInfo.language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: red;
+    display: block;
+    margin-top: 5px;
+}
+.container .right-side{
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
+}
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: #003147;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    
+}
+p{
+    color: #333;
+    word-spacing: 1px;
+}
+.projects{
+    margin-bottom: 20px;
+}
+.projects h3{
+    word-spacing: 2px;
+    color: #03a9f4;
+}
+.projectText{
+    font-size: 12px;
+    margin-top: 8px;
+    color: #333;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.education .details h3{
+    color:#03a9f4;
+    word-spacing: 2px;
+}
+.interests ul li{
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+    list-style: none;
+}
+.interests ul li .icon{
+    color: #03a9f4;
+}
+.interests .text{
+    padding-left: 10px;
+}
+a{
+    color:white;
+}
